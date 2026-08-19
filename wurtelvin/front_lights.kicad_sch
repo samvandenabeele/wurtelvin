@@ -2608,7 +2608,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2dd2eae6-5922-4c80-8302-23675a890ad6")
-		(property "Reference" "#PWR025"
+		(property "Reference" "#PWR026"
 			(at 203.2 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -2668,7 +2668,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/7d7a71d4-c47d-4b55-bb46-6c42d31d1a1d"
-					(reference "#PWR025")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -2777,7 +2777,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3225a681-d87a-44b8-a444-8d1150fa2a1d")
-		(property "Reference" "#PWR024"
+		(property "Reference" "#PWR025"
 			(at 203.2 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2837,7 +2837,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/7d7a71d4-c47d-4b55-bb46-6c42d31d1a1d"
-					(reference "#PWR024")
+					(reference "#PWR025")
 					(unit 1)
 				)
 			)
@@ -3360,7 +3360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "730ad65b-37aa-4e21-b3d3-93f6b088002e")
-		(property "Reference" "#PWR021"
+		(property "Reference" "#PWR022"
 			(at 142.24 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3420,7 +3420,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/7d7a71d4-c47d-4b55-bb46-6c42d31d1a1d"
-					(reference "#PWR021")
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -3517,7 +3517,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "83978951-cee1-4536-86b2-a9d796989f37")
-		(property "Reference" "#PWR020"
+		(property "Reference" "#PWR021"
 			(at 120.65 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3577,7 +3577,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/7d7a71d4-c47d-4b55-bb46-6c42d31d1a1d"
-					(reference "#PWR020")
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -3756,7 +3756,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b60be2a3-5f48-460b-923a-cc54458fd3c5")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR024"
 			(at 224.79 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -3816,7 +3816,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/7d7a71d4-c47d-4b55-bb46-6c42d31d1a1d"
-					(reference "#PWR026")
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -3916,7 +3916,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d82ab090-2536-4429-84ed-b2f981967b9d")
-		(property "Reference" "#PWR022"
+		(property "Reference" "#PWR020"
 			(at 203.2 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -3976,7 +3976,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/7d7a71d4-c47d-4b55-bb46-6c42d31d1a1d"
-					(reference "#PWR022")
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)

@@ -338,7 +338,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:1N5820"
+		(symbol "Diode:SS32"
 			(pin_numbers
 				(hide yes)
 			)
@@ -361,7 +361,7 @@
 					)
 				)
 			)
-			(property "Value" "1N5820"
+			(property "Value" "SS32"
 				(at 0 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -371,7 +371,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
+			(property "Footprint" "Diode_SMD:D_SMA"
 				(at 0 -4.445 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -382,7 +382,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
+			(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -393,7 +393,7 @@
 					)
 				)
 			)
-			(property "Description" "20V 3A Schottky Barrier Rectifier Diode, DO-201AD"
+			(property "Description" "20V 3A Schottky Diode, SMA"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -415,7 +415,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "D*DO?201AD*"
+			(property "ki_fp_filters" "D*SMA*"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -426,7 +426,7 @@
 					)
 				)
 			)
-			(symbol "1N5820_0_1"
+			(symbol "SS32_0_1"
 				(polyline
 					(pts
 						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
@@ -464,7 +464,7 @@
 					)
 				)
 			)
-			(symbol "1N5820_1_1"
+			(symbol "SS32_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -1526,6 +1526,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(text_box "3V3/2A and 5V/2A"
 		(exclude_from_sim no)
@@ -1572,6 +1687,12 @@
 		(uuid "1e6d5ccc-0347-4391-9351-7eede53ada4f")
 	)
 	(junction
+		(at 170.18 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2bc9c333-d9b0-48c4-b978-62178225d0c6")
+	)
+	(junction
 		(at 172.72 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1582,6 +1703,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3292c489-2219-43aa-afe7-403c962dfc33")
+	)
+	(junction
+		(at 170.18 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37f7988a-19df-4b6e-a8cd-ad6a8c1bb675")
 	)
 	(junction
 		(at 172.72 86.36)
@@ -1717,6 +1844,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 102.87) (xy 170.18 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ed29fb8-9b0c-4033-8433-0db1548ea0a8")
+	)
+	(wire
+		(pts
 			(xy 157.48 124.46) (xy 146.05 124.46)
 		)
 		(stroke
@@ -1794,6 +1931,16 @@
 			(type default)
 		)
 		(uuid "36261b4a-14d9-4be5-b86f-777a9a1fdf96")
+	)
+	(wire
+		(pts
+			(xy 170.18 64.77) (xy 170.18 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "368a44d6-e429-4546-a95f-9145e8dd2324")
 	)
 	(wire
 		(pts
@@ -2196,6 +2343,84 @@
 		(uuid "fe0be494-9667-4c51-80cf-2456fe01bc86")
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 170.18 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "155ad4a9-5c50-4c88-8b8e-798f6a1f30b6")
+		(property "Reference" "#FLG03"
+			(at 170.18 62.865 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 170.18 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 170.18 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 170.18 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "89d7ad6a-7974-4bfb-9666-78507e989c00")
+		)
+		(instances
+			(project "wurtelvin"
+				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 184.15 64.77 0)
 		(unit 1)
@@ -2207,7 +2432,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1af95ab7-e54f-45ae-8994-182a7e5f894a")
-		(property "Reference" "#PWR050"
+		(property "Reference" "#PWR046"
 			(at 184.15 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -2267,7 +2492,89 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
-					(reference "#PWR050")
+					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SS32")
+		(at 172.72 80.01 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2543356d-94d4-4209-b126-cc98cc861c1c")
+		(property "Reference" "D8"
+			(at 175.26 78.4224 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS32"
+			(at 175.26 80.9624 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 168.275 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
+			(at 172.72 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "20V 3A Schottky Diode, SMA"
+			(at 172.72 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "162f91a5-ae69-4bdd-b4bb-0dd3ca0663e4")
+		)
+		(pin "2"
+			(uuid "46942925-0be5-40ff-963b-3d29709a43ad")
+		)
+		(instances
+			(project "wurtelvin"
+				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -2285,7 +2592,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "26d414c2-5b75-4c7d-903e-7f7aa9531203")
-		(property "Reference" "C28"
+		(property "Reference" "C29"
 			(at 138.43 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2349,7 +2656,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
-					(reference "C28")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -2367,7 +2674,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27c34505-9ab6-4cef-b621-d6f74f4f8dfc")
-		(property "Reference" "C26"
+		(property "Reference" "C28"
 			(at 125.73 116.8399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2431,7 +2738,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
-					(reference "C26")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -2449,7 +2756,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3107e665-47cc-4ad5-a5bf-4ab31a49b9fa")
-		(property "Reference" "C29"
+		(property "Reference" "C27"
 			(at 187.96 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2513,7 +2820,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
-					(reference "C29")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -2602,8 +2909,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N5820")
-		(at 172.72 80.01 270)
+		(lib_id "power:PWR_FLAG")
+		(at 170.18 102.87 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2611,31 +2918,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "84fb3565-02a0-4439-ac91-21abec61e4e6")
-		(property "Reference" "D8"
-			(at 174.498 80.518 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N5820"
-			(at 173.228 82.804 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
-			(at 168.275 80.01 0)
+		(fields_autoplaced yes)
+		(uuid "903fe27e-776b-433e-ae86-9e33b57a5a08")
+		(property "Reference" "#FLG04"
+			(at 170.18 100.965 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2645,8 +2931,18 @@
 				)
 			)
 		)
-		(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
-			(at 172.72 80.01 0)
+		(property "Value" "PWR_FLAG"
+			(at 170.18 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2656,8 +2952,19 @@
 				)
 			)
 		)
-		(property "Description" "20V 3A Schottky Barrier Rectifier Diode, DO-201AD"
-			(at 172.72 80.01 0)
+		(property "Datasheet" ""
+			(at 170.18 102.87 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 170.18 102.87 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2668,15 +2975,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "91cbc355-2658-47e8-9392-7a1dd8f1eb75")
-		)
-		(pin "2"
-			(uuid "e391c6e2-317e-463f-9592-095959964f2d")
+			(uuid "31f90b49-9fdd-4478-93c4-39c9a87f5c73")
 		)
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
-					(reference "D8")
+					(reference "#FLG04")
 					(unit 1)
 				)
 			)
@@ -2856,7 +3160,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b70e2ca8-ea7b-4d84-bd66-0c3d63c0bb0c")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR050"
 			(at 121.92 113.03 0)
 			(hide yes)
 			(show_name no)
@@ -2917,7 +3221,89 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
-					(reference "#PWR047")
+					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SS32")
+		(at 172.72 118.11 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c401de94-a9c4-4049-ad29-1bc066987a21")
+		(property "Reference" "D9"
+			(at 175.26 116.5224 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "SS32"
+			(at 175.26 119.0624 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMA"
+			(at 168.275 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/88751/ss32.pdf"
+			(at 172.72 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "20V 3A Schottky Diode, SMA"
+			(at 172.72 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "642a03bd-c128-4c75-af6d-cc244eb54d16")
+		)
+		(pin "2"
+			(uuid "6e47951d-f5c3-4d79-bf5f-d1ac4b777a6c")
+		)
+		(instances
+			(project "wurtelvin"
+				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -2935,7 +3321,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca2bbf02-a6db-4b87-bbd2-8b8a3d2c256a")
-		(property "Reference" "C27"
+		(property "Reference" "C26"
 			(at 138.43 78.7399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2999,7 +3385,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
-					(reference "C27")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -3293,7 +3679,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e6a31837-0850-4c02-b3ba-7d484496fed1")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR047"
 			(at 121.92 74.93 0)
 			(hide yes)
 			(show_name no)
@@ -3354,7 +3740,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
-					(reference "#PWR046")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -3372,7 +3758,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e72590f5-dc8d-45e0-9352-1645aabf161f")
-		(property "Reference" "#PWR051"
+		(property "Reference" "#PWR049"
 			(at 184.15 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -3432,7 +3818,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
-					(reference "#PWR051")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -3450,7 +3836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9995b77-730e-4f8e-8151-a6ab8df24f4e")
-		(property "Reference" "#PWR049"
+		(property "Reference" "#PWR051"
 			(at 157.48 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -3510,7 +3896,7 @@
 		(instances
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
-					(reference "#PWR049")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -3589,87 +3975,6 @@
 			(project "wurtelvin"
 				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
 					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N5820")
-		(at 172.72 118.11 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ff27cb02-0e02-41e7-bc42-67671153454e")
-		(property "Reference" "D9"
-			(at 174.498 118.618 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N5820"
-			(at 173.228 120.904 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-201AD_P15.24mm_Horizontal"
-			(at 168.275 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88526/1n5820.pdf"
-			(at 172.72 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "20V 3A Schottky Barrier Rectifier Diode, DO-201AD"
-			(at 172.72 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8620bea3-189a-4e11-a044-ba42cd2d8d4a")
-		)
-		(pin "2"
-			(uuid "b16df39e-5d23-4dea-ae1e-c8b8d972958e")
-		)
-		(instances
-			(project "wurtelvin"
-				(path "/dc8327c7-d907-4408-83b1-7c30996a1f7f/c4190652-1c05-455c-90ed-fc23c4d48e90"
-					(reference "D9")
 					(unit 1)
 				)
 			)
